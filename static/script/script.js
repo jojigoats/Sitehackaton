@@ -1,9 +1,9 @@
 const topHeaderElement = document.querySelector("#aviso");
-const topHeaderElementText = "As inscrições INSANAS ao vestibulinho estão abertas!";
+const topHeaderElementText = "As inscrições do vestibulinho estão abertas!";
 const titleHeaderElement = document.querySelector("#boas-vindas")
 const titleHeaderElementText = "Bem-vindo ao Descotec";
 const subTitleHeaderElement = document.querySelector("#boas-vindas-2");
-const subTitleHeaderElementText = "Faça sua inscrição conforto de sua casa!";
+const subTitleHeaderElementText = "Faça sua inscrição no conforto de sua casa!";
 
 // Scroll Handler
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
@@ -21,7 +21,7 @@ scrollToTopBtn.addEventListener("click", () => {
   document.documentElement.scrollTop = 0;
 });
 
-async function fancyTyping(element, text, delay = 25) {
+async function fancyTyping(element, text, delay=25) {
   return new Promise((resolve) => {
     let index = 0;
     function type() {
@@ -44,24 +44,3 @@ async function fancyTyping(element, text, delay = 25) {
   await fancyTyping(titleHeaderElement, titleHeaderElementText);
   fancyTyping(subTitleHeaderElement, subTitleHeaderElementText);
 })();
-
-// function typeTextInElement(element, text) {
-//   let index = 0;
-
-//   function typeText() {
-//     element.textContent = text.slice(0, index);
-//     index++;
-
-//     if (index <= text.length) {
-//       setTimeout(typeText, 25);
-//     }
-//   }
-
-//   typeText();
-// }
-
-// // Para usar a função em outro componente, você pode fazer o seguinte:
-// const outroElemento = document.getElementById("aviso");
-// const outroTexto = "As inscrições Insanas estão abertas!";
-
-// typeTextInElement(outroElemento, outroTexto);
