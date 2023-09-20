@@ -2,17 +2,41 @@
   box-sizing: border-box;
 }
 
-.carousel slide {
-  display: in;
-  justify-content: center;
+/* nav */
+nav ul {
+  width: 100%;
 }
 
-.bi bi-instagram {
-  background-color: #fff;
+.social-icons .fa-brands {
+  color: white;
 }
 
+.nav-link:hover {
+  color: gray !important;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.social-icons .fa-brands:hover {
+  color: gray;
+}
+
+/* carrousel */
 .w-600 {
   width: 70rem;
+}
+
+.container-carousel-1 .image-container {
+  /* max-width: 100%; */
+  /* min-height: 400px; */
+  background-color: black;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 .centered-carousel {
@@ -44,35 +68,12 @@
   margin-top: 27rem;
   /* Ajuste o tamanho dos ícones */
 }
+/* .bi .bi-instagram {
+  background-color: #fff;
+} */
 
 
-.sabermais {
-  text-decoration: none;
-}
-
-.social-icons {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-
-
-nav ul {
-  width: 100%;
-}
-
-.social-icons .fa-brands {
-  color: white;
-}
-
-.nav-link:hover {
-  color: gray !important;
-}
-
-.social-icons .fa-brands:hover {
-  color: gray;
-}
-
+/* Lista de Cursos */
 .lista-curso {
   display: grid;
   grid-template-columns: repeat(4, minmax(240px, 1fr));
@@ -90,10 +91,18 @@ nav ul {
   color: #343a40;
 }
 
+@media only screen and (max-width: 600px) {
+  .lista-curso {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+}
 
+/*
+Muito medo de quem escreveu isso aqui
 a {
   text-align: none;
-}
+} */
 
 .footer-links a:hover {
   background-color: #f0f0f0;
@@ -104,10 +113,3 @@ a {
 }
 
 .footer-links a:hover {}
-
-@media only screen and (max-width: 600px) {
-  .lista-curso {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  }
-}
