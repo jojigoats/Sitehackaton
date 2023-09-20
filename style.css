@@ -1,0 +1,113 @@
+:root {
+  box-sizing: border-box;
+}
+
+.carousel slide {
+  display: in;
+  justify-content: center;
+}
+
+.bi bi-instagram {
+  background-color: #fff;
+}
+
+.w-600 {
+  width: 70rem;
+}
+
+.centered-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.carousel-item img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-control-prev {
+  right: -40px;
+  /* Ajuste a posição da seta esquerda */
+}
+
+.carousel-control-next {
+  left: 63rem;
+  /* Ajuste a posição da seta direita */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  font-size: 500px;
+  margin-top: 27rem;
+  /* Ajuste o tamanho dos ícones */
+}
+
+
+.sabermais {
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+
+nav ul {
+  width: 100%;
+}
+
+.social-icons .fa-brands {
+  color: white;
+}
+
+.nav-link:hover {
+  color: gray !important;
+}
+
+.social-icons .fa-brands:hover {
+  color: gray;
+}
+
+.lista-curso {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(240px, 1fr));
+}
+
+/* Estilização específica para o rodapé (footer) */
+.site-footer {
+  background-color: #f8f9fa;
+  color: #343a40;
+  padding: 40px;
+  border-top: 1px solid #e9ecef;
+}
+
+.site-footer h5 {
+  color: #343a40;
+}
+
+
+a {
+  text-align: none;
+}
+
+.footer-links a:hover {
+  background-color: #f0f0f0;
+  padding: 5px;
+  /* Ajuste a seu gosto */
+  border-radius: 5px;
+  /* Ajuste a seu gosto */
+}
+
+.footer-links a:hover {}
+
+@media only screen and (max-width: 600px) {
+  .lista-curso {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+}
