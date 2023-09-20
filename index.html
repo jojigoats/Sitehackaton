@@ -1,312 +1,219 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Descotec</title>
-  <link rel="icon" type="image/png" href="./img/favicon.ico" />
-  <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-  crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-  crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descotec|Vestibulinho</title>
+  <!--Instalação - Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!--Linkando o Css-->
+  <link rel="stylesheet" href="./static/css/style.css">
 </head>
-
 <body>
-  <!-- home -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Material de Estudo<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="https://www.vestibulinhoetec.com.br/home/">
-          ETEC<span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <!-- <li class="nav-item active">
-        <a class="nav-link" href="https://eteab.com.br/cms/"><i class="bi bi-instagram"></i></a>
-      </li> -->
-      <li class="social-icons nav-item" style="margin-left: auto">
-        <a class="btn btn-info" href="#">Inscreva-se</a>
-        <a href="https://www.instagram.com/etecadolphoberezin/"><i class="fa-brands fa-2x fa-instagram"></i></a>
-        <a href="https://web.facebook.com/etecadolpho.berezin?_rdc=1&_rdr">
-          <i class="fa-brands fa-2x fa-facebook"></i>
-        </a>
-      </li>
-    </ul>
-  </nav>
+  <!--Seção de Navbar-->
+  <section id="nav" class="container p-0">
+    <p class=" text-center text-warning" id="aviso"></p>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="img-fluid" width="80px" height="80px" src="./static/imgs/logo.png" alt="" srcset=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#section-cursos">Cursos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#section-newsletter">Newsletter</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
 
-  <!-- Texto de boas vindas -->
-  <section class="mt-5 p-5">
-    <div class="container">
-      <p class="h1 text-center text-warning" id="typing-effect"></p>
+              </ul>
+              <form class="d-flex" role="search">
+                <button class="btn btn-outline-warning" type="submit">Se Inscreva!</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+
     </div>
   </section>
-
-  <!-- <div class="card p-5">
-    <h5 class="card-header">Link Para Se Inscrever</h5>
-    <div class="card-body">
-      <h5 class="card-title">Special title treatment</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="https://www.vestibulinhoetec.com.br/home/" class="btn btn-outline-warning">Quero Me Inscrever</a>
-    </div>
-  </div> -->
-
-  <!-- carrosel -->
-  <div class="container-carousel-1 p-5">
-    <div id="carouselExampleControls" class="w-600 carousel slide" data-ride="carousel">
-      <div class="carousel-item active">
-        <div class="image-container">
-          <img class="d-block w-50" src="img/animate.svg" alt="First slide">
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="image-container">
-          <img class="d-block w-100"
-          src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_18aae743410%20text%20%7B%20fill%3A%23444%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_18aae743410%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23666%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22250.5%22%20y%3D%22218%22%3ESecond%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-          alt="Second slide">
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="image-container">
-          <img class="d-block w-100"
-          src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_18aae743411%20text%20%7B%20fill%3A%23333%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_18aae743411%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23555%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22279.5%22%20y%3D%22218%22%3EThird%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-          alt="Third slide">
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-
-  <!-- Youtube -->
-  <div class="text-center">
-    <div class="container p-5">
-      <h1 class="text-center p-2">Apresentação</h1>
-      <!-- <a href="https://www.youtube.com/watch?v=0CrI4vSHbFs" class="launch-modal" data-code="0CrI4vSHbFs">
-        <img src="https://fatweb.s3.amazonaws.com/vestibulinhoetec/assets/img/thumb-video-cps.jpg?v=1.1.2"
-        class="img-fluid" alt="CPS Youtube Thumb">
-      </a> -->
-      <iframe src="https://youtube.com/embed/0CrI4vSHbFs" frameborder="0" width=640 height=360></iframe>
-    </div>
-  </div>
-  <!-- cards -->
-  <h1 class="text-center p-2">Nossos Cursos</h1>
-  <div class="lista-curso p-5">
-    <!-- DS -->
-    <div class="card p-2">
-      <!-- <img src="/img/computador.png" class="card-img-top" alt="..."> -->
-      <i class="fa-solid fa-laptop-code fa-4x" style="align-self: center"></i>
-      <div class="card-body">
-        <h5 class="card-title">Desenvolvimento de Sistemas</h5>
-        <p class="card-text">O curso de Desenvolvimento de Sistemas é uma formação que prepara os alunos para conceber,
-          criar, implementar e manter sistemas de software eficientes e funcionais.
-          O foco está na aplicação de conhecimentos em programação, algoritmos, bancos de dados, arquitetura de software
-          e
-          engenharia de software para atender às necessidades de diferentes organizações.
-        </p>
-      </div>
-      <div class="card-footer">
-        <a href="https://eteab.com.br/cms/?page_id=139" class="text-decoration-none"><button type="button" class="btn btn-warning">
-          Saber Mais</button>
-        </a>
-      </div>
-    </div>
-    <!-- Administraçao -->
-    <div class="card p-2">
-      <!-- <img src="/img/big-gear.png" class="card-img-top" alt="..."> -->
-      <i class="fa-solid fa-gear fa-4x" style="align-self: center"></i>
-      <div class="card-body">
-        <h5 class="card-title">Administração</h5>
-        <p class="card-text">
-          O curso de Administração é uma graduação que oferece uma formação ampla e abrangente em gestão de negócios e
-          organizações. Ele visa desenvolver competências e habilidades necessárias para administrar recursos de forma
-          eficaz, tomar decisões estratégicas, liderar equipes e alcançar os objetivos de uma organização, seja ela
-          pública, privada ou do terceiro setor.
-        </p>
-      </div>
-      <div class="card-footer">
-        <a href="https://eteab.com.br/cms/?page_id=8859" class="text-decoration-none"><button type="button"
-          class="btn btn-warning">
-          Saber Mais</button>
-        </a>
-      </div>
-    </div>
-    <!-- Turismo -->
-    <div class="card p-2">
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <i class="fa-solid fa-map-location-dot fa-4x" style="align-self: center"></i>
-      <div class="card-body">
-        <h5 class="card-title">Turismo</h5>
-        <p class="card-text">O curso de Turismo Receptivo é uma formação voltada para profissionais que desejam atuar na
-          recepção, orientação e acompanhamento de turistas em destinos turísticos. Esse ramo do turismo tem como foco
-          principal proporcionar uma experiência positiva e enriquecedora aos visitantes, garantindo que eles se sintam
-          bem-vindos e tenham acesso a informações e serviços que facilitem sua estadia e aproveitamento do destino.
-        </p>
-      </div>
-      <div class="card-footer">
-        <a href="https://eteab.com.br/cms/?page_id=145" class="text-decoration-none"><button type="button"
-          class="btn btn-warning">Saber Mais</button>
-        </a>
-      </div>
-    </div>
-    <!-- Enfermagem -->
-    <div class="card p-2">
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <i class="fa-solid fa-user-nurse fa-4x" style="align-self: center"></i>
-      <div class="card-body">
-        <h5 class="card-title">Enfermagem</h5>
-        <p class="card-text">O curso de Enfermagem é uma graduação na área da saúde que prepara profissionais para atuar
-          no cuidado, promoção, prevenção e recuperação da saúde de indivíduos, famílias e comunidades. É uma das
-          profissões mais essenciais e gratificantes, desempenhando um papel crucial no sistema de saúde.
-        </p>
-      </div>
-      <div class="card-footer">
-        <a href="https://eteab.com.br/cms/?page_id=137" class="text-decoration-none"><button type="button"
-          class="btn btn-warning">Saber Mais</button>
-        </a>
-      </div>
-    </div>
-    <!-- Edificações -->
-    <div class="card p-2">
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <i class="fa-solid fa-person-digging fa-4x" style="align-self: center"></i>
-      <div class="card-body">
-        <h5 class="card-title">Edificações</h5>
-        <p class="card-text">O curso técnico em Edificações é uma formação que prepara profissionais para atuarem na
-          área da construção civil, especificamente no processo de elaboração e execução de projetos de edifícios, obras
-          de infraestrutura e serviços relacionados. É uma área fundamental para o desenvolvimento e expansão do setor
-          de construção.
-        </p>
-      </div>
-      <div class="card-footer">
-        <a href="https://eteab.com.br/cms/?page_id=135" class="text-decoration-none"> <button type="button"
-          class="btn btn-warning">Saber Mais</button>
-        </a>
-      </div>
-    </div>
-    <!-- Informática -->
-    <div class="card p-2">
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <i class="fa-solid fa-computer fa-4x" style="align-self: center"></i>
-      <div class="card-body">
-        <h5 class="card-title">Informática</h5>
-        <p class="card-text">O curso de Informática é uma formação abrangente que proporciona aos alunos conhecimentos
-          essenciais sobre tecnologia da informação, computadores, software, hardware e aplicações práticas. Essa
-          formação visa capacitar os estudantes a entender e utilizar sistemas de computadores de maneira eficaz,
-          contribuindo para uma ampla gama de campos profissionais.
-        </p>
-      </div>
-      <div class="card-footer">
-
-        <a href="https://eteab.com.br/cms/?page_id=9677" class="text-decoration-none"><button type="button"
-          class="btn btn-warning">Saber Mais</button>
-        </a>
-      </div>
-    </div>
-    <!-- Médio Exatas -->
-    <div class="card p-2">
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <i class="fa-solid fa-calculator fa-4x" style="align-self: center"></i>
-      <div class="card-body">
-        <h5 class="card-title">Ensino Medio - Ciências Exatas e Engenharia
-        </h5>
-        <p class="card-text">O curso de Ensino Médio com ênfase em Ciências Exatas e Engenharia é uma modalidade de
-          ensino que tem como foco o aprofundamento em disciplinas relacionadas às ciências exatas, tais como
-          Matemática, Física, Química e Biologia. Essa formação prepara os estudantes para ingressarem em cursos
-          superiores na área de Engenharia e afins.
-        </p>
-      </div>
-      <div class="card-footer">
-        <a href="https://eteab.com.br/cms/?page_id=10692" class="text-decoration-none"> <button type="button"
-          class="btn btn-warning">Saber Mais</button>
-        </a>
-      </div>
-    </div>
-    <!-- Médio Humanas -->
-    <div class="card p-2">
-      <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <i class="fa-solid fa-book-bookmark fa-4x" style="align-self: center"></i>
-      <div class="card-body">
-        <h5 class="card-title">Ensino Medio -
-          Ciências Humanas e Sociais
-        </h5>
-        <p class="card-text">O curso de Ensino Médio com ênfase em Ciências Humanas e Sociais é uma modalidade de ensino
-          que concentra seus estudos nas áreas de Ciências Sociais, História, Geografia, Filosofia, Sociologia,
-          Psicologia e outras disciplinas relacionadas. Ele tem o objetivo de fornecer uma formação que explore as
-          complexidades e dinâmicas sociais, culturais e históricas.
-        </p>
-      </div>
-      <div class="card-footer">
-        <a href="https://eteab.com.br/cms/?page_id=9681" class="text-decoration-none"> <button type="button"
-          class="btn btn-warning">Saber Mais</button>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="text-center">
-    <h1 class="text-center text-warning p-3">Localização</h1>
-    <div class="container">
-      <div class="row col-12">
-        <iframe class="text-center"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.411294532932!2d-46.68125892456644!3d-24.122189978418522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce27e8f7751d31%3A0x6382eb95def97024!2sEtec%20Adolpho%20Berezin!5e0!3m2!1spt-BR!2sbr!4v1695154433227!5m2!1spt-BR!2sbr"
-        width="1400px" height="450px" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </div>
-
-  <!-- Rodapé -->
-  <footer class="site-footer p-5 bg-muted">
-    <div class="container">
+  <!--Seção de Main "Conteúdo"-->
+  <section id="main" class="container p-5">
+    <div class="container-fluid">
       <div class="row">
-        <!-- Coluna 1: Links -->
-        <div class="col-md-6">
-          <h5>Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="https://www.instagram.com/desconectados_hack1/">Equipe | Desconectados</a></li>
-            <li><a href="https://www.vestibulinhoetec.com.br/politica-de-privacidade/">Política de Privacidade</a></li>
-            <li><a href="https://www.vestibulinhoetec.com.br/termos-de-uso/">Termos e Condições</a></li>
-          </ul>
+
+
+        <p class="col-12 text-center text-warning" id="boas-vindas" style="font-size: 3rem"></p>
+        <p class="col-12 text-center text-warning" id="boas-vindas-2" style="font-size: 2rem"></p>
+        <img width="300px" height="300px" src="./static/imgs/animação.svg" alt="" srcset="">
+
+        <div class="container p-4 bg-body-tertiary">
+          <h1 class="text-warning">Sobre Etec Adolpho Berezin</h1>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100" style=" box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);">
+                <i class="bi bi-award-fill text-center"  style="font-size: 10rem; color: darkorange;"></i>
+                <div class="card-body">
+                  <h2 class="card-title text-warning">Sobre a Etec</h2>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                  <button type="button" class="btn btn-dark">Quero Saber Mais</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100"  style=" box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);">
+                <i class="bi bi-person-square text-center" style="font-size: 10rem; color: darkorange;"></i>
+                <div class="card-body">
+                  <h2 class="card-title text-warning">Admissões e Matrículas</h2>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer">
+                  <button type="button" class="btn btn-dark">Quero Saber Mais</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100"  style=" box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);">
+                <i class="bi bi-patch-check-fill text-center" style="font-size: 10rem; color: darkorange;"> </i>
+                <div class="card-body">
+                  <h2 class="card-title text-warning">Programas Acadêmicos</h2>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+                <div class="card-footer">
+                  <button type="button" class="btn btn-dark">Quero Saber Mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- Coluna 2: Contato -->
-        <div class="col-md-6">
-          <h5>Contate-nos</h5>
-          <address>
-            Av. Monteiro Lobato, 8000 - Bal.<br>
-            Jussara, Mongaguá - SP, 11730-000<br>
-            <a href="mailto:desconecadosacademico2023@gmail.com">desconecadosacademico2023@gmail.com</a>
-          </address>
+        <div class="center-container p-4" >
+          <h1 id="cps-h1">Centro Paula Souza</h1>
+          <iframe  style=" box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);"  src="https://youtube.com/embed/0CrI4vSHbFs" frameborder="0" width="100%" height="400px"></iframe>
+        </div>
+
+
+        <div class="container text-center p-5">
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./static/imgs/Vestibulinho! (1).png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8"  style=" box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);">
+                <div class="card-body">
+                  <h2 class="card-title text-warning-emphasis">Sobre o Vestibulinho</h2>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <button type="button" class="btn btn-outline-warning">Quero Saber Mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h1 id="section-cursos">Nossos Cursos</h1>
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action active bg-warning" aria-current="true">
+            Etec Adolpho Berezin
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">Desenvolvimento de Sistemas</a>
+          <a href="#" class="list-group-item list-group-item-action">Administração</a>
+          <a href="#" class="list-group-item list-group-item-action">Enfermagem</a>
+          <a href="#" class="list-group-item list-group-item-action">Edificações</a>
+          <a href="#" class="list-group-item list-group-item-action">Exatas</a>
+          <a href="#" class="list-group-item list-group-item-action">Humanas</a>
+          <!-- <a class="list-group-item list-group-item-action disabled" aria-disabled="true">Para Saber um pouco mais sobre os Cursos, clique nos links</a> -->
         </div>
       </div>
     </div>
-  </footer>
+
+  </section>
+  <!--Seção de Footer-->
+  <section id="footer" class="container p-5 bg-body-tertiary">
+    <div class="p-5">
+      <h1 class="text-warning p-3" id="section-newsletter">Newsletter</h1>
+
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text"></div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Quero Assinar a Newsletter da Descotec</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <div class="p-5">
+      <h1 class="text-warning p-3">Localização</h1>
+      <div class="container">
+        <div class="row col-12">
+
+          <iframe class="text-center"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.411294532932!2d-46.68125892456644!3d-24.122189978418522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce27e8f7751d31%3A0x6382eb95def97024!2sEtec%20Adolpho%20Berezin!5e0!3m2!1spt-BR!2sbr!4v1695154433227!5m2!1spt-BR!2sbr"
+          width="1400px" height="450px" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Rodapé -->
+    <footer class="site-footer p-5 bg-muted">
+      <div class="container">
+        <div class="row">
+          <!-- Coluna 1: Links -->
+          <div class="col-md-6">
+            <h5>Links</h5>
+            <ul class="list-unstyled">
+              <li><a class="text-warning" href="https://www.instagram.com/desconectados_hack1/">Equipe | Desconectados</a></li>
+              <li><a class="text-warning" href="https://www.vestibulinhoetec.com.br/politica-de-privacidade/">Política de Privacidade</a></li>
+              <li><a class="text-warning" href="https://www.vestibulinhoetec.com.br/termos-de-uso/">Termos e Condições</a></li>
+            </ul>
+          </div>
+
+          <!-- Coluna 2: Contato -->
+          <div class="container">
+            <div class="col-md-6">
+              <h5>Contate-nos</h5>
+              <address>
+                Av. Monteiro Lobato, 8000 - Bal.<br>
+                Jussara, Mongaguá - SP, 11730-000<br>
+                <a class="lead" href="mailto:desconecadosacademico2023@gmail.com">desconecadosacademico2023@gmail.com</a>
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <button id="scrollToTopBtn" title="Voltar para o Topo">
+    <i class="bi bi-arrow-up-short" style="font-size: 3rem; color: darkorange;"></i>
+  </button>
+  <!--Scripts-->
   <script>
-    const text = "Bem-vindo ao Descotec e faça a sua inscrição para o vestibulinho!";
-    const typingElement = document.getElementById("typing-effect");
+/*     const text = "Bem-vindo ao Descotec e faça a sua inscrição para o vestibulinho!";
+    const typingElement = document.getElementById("boas-vindas");
 
     let index = 0;
 
@@ -315,12 +222,13 @@
       index++;
 
       if (index <= text.length) {
-        setTimeout(typeText, 100);
+        setTimeout(typeText, 25);
       }
     }
 
-    typeText();
+    typeText(); */
   </script>
-</body>
+  <script src="./static/script/script.js"></script>
 
+</body>
 </html>
